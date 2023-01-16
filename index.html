@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Choose Color - EyeDropper Tool JS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body class="bg-slate-800 text-slate-200 flex min-h-screen justify-center items-center">
+    <div id="color-picker-container"
+        class="p-2 bg-sky-100 rounded-md w-96 flex flex-col justify-center items-center gap-1">
+        <div id="pick-color" class="h-24 flex justify-center items-center">
+            <button id="color-picker" class="bg-blue-700 hover:bg-blue-900 py-2 px-6 rounded-md">Pick Color</button>
+        </div>
+        <div id="color-container" class="text-slate-900 w-full space-y-1 hidden">
+            <div id="titles" class="flex justify-between items-center">
+                <p>Picked Colors</p>
+                <button id="clear-all-colors" class="text-sm text-blue-700 hover:text-blue-500">Clear All</button>
+            </div>
+            <ul id="colors" class="flex gap-3 flex-wrap uppercase pl-2"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
